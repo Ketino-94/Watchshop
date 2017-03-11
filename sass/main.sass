@@ -1,0 +1,507 @@
+body
+	margin: 0
+	font-family: 'RockwellMT'
+	.header, .main, .footer
+		display: block
+	.header__info
+		background: #000
+		.container
+			max-width: 970px
+			.header__info__phone 
+				color: #fff
+				font-size: 12px
+				text-transform: uppercase
+				padding-top: 8px
+				.header__info__phone-n
+					font-family: 'Rockwell-Bold'
+					font-size: 14px
+			ul.header__info__user
+				list-style: none
+				margin: 0px
+				padding: 0px
+				text-align: right
+				li
+					display: inline-block
+					font-size: 11px
+					padding: 4px 12px
+					text-transform: uppercase
+					border-right: 1px solid #444444
+					vertical-align: middle
+					a 
+						color: #fff
+				li:last-child
+					border-right: none
+				li.currency
+					position: relative
+					padding-right: 25px
+				li.currency:after 
+					content: ""
+					position: absolute
+					background: url("../img/us-icon.png") no-repeat
+					width: 7px
+					height: 4px
+					top: 10px
+					right: 8px	
+				li.account
+					position: relative
+					padding-left: 25px 
+				li.account:after 
+					content: ""
+					position: absolute
+					background: url("../img/account-icon.png") no-repeat
+					width: 14px
+					height: 13px
+					top: 4px
+					left: 4px
+	.header__main
+		background: #fff
+		padding-top: 47px
+		padding-bottom: 38px
+		.container
+			max-width: 970px 
+			.header__main__logo 
+				a
+					cursor: pointer
+					display: block
+					width: 100%
+			.header__main__nav 
+				list-style: none
+				padding: 0
+				margin: 0
+				font-size: 16px
+				li 
+					display: inline-block
+					padding: 0 19px
+					position: relative
+					cursor: pointer
+					a
+						color: #000 
+				li :after 
+					content: ""
+					position: absolute
+					background: url("../img/nav-icon.png") no-repeat
+					width: 7px
+					height: 4px
+					top: 10px
+					right: 2px
+			.overlay
+				position: fixed
+				background: rgba(0,0,0,0.9)
+				height: 100%
+				left: 0px
+				top: 0
+				width: 100%
+				z-index: 2
+				display: none
+	.slick-arrow
+		border: none
+		position: absolute
+		top: 50%
+	.slick-prev
+		background: url("../img/arrow-pre.png") no-repeat
+		width: 13px
+		height: 18px
+		left: 25px
+	.slick-next
+		background: url("../img/arrow-next.png") no-repeat
+		width: 13px
+		height: 18px
+		right: 25px
+	.slick-dots	
+		list-style: none
+		margin: 0
+		padding: 0
+		text-align: center
+		border: none
+		position: absolute
+		bottom: -50px
+		left: 35%
+		li 
+			display: inline-block
+			width: 10px
+			height: 10px
+			margin: 0 10px
+			outline: none
+			background: #cdcdcd 
+			border-radius: 5px
+		button
+			background: #cdcdcd 
+			width: 10px
+			border: none
+			height: 10px
+			border-radius: 5px
+			text-indent: -99999px
+			padding: 0
+			outline: none
+		.slick-active button
+			background: #748cf0
+	.header__slider
+		background: #000
+		width: 100%
+		height: 440px
+		.header__holder
+			margin: 0 auto
+			background: url("../img/slider-bg.jpg") 50% 0 no-repeat
+			width: 1200px
+			height: 440px
+			.header__slider__text
+				text-align: left
+				padding-top: 85px
+				padding-left: 200px
+				h1
+					text-transform: uppercase
+					color: #78645d
+					line-height: 74px
+					margin: 0
+					font-size: 96px
+					font-family: 'Rockwell-Bold'
+				p
+					text-transform: uppercase
+					color: #8f9191
+					font-size: 24px
+					margin: 0
+					margin-top: 15px
+					margin-left: 54px
+				a
+					display: inline-block
+					font-size: 16px
+					font-family: 'Rockwell-Bold'
+					text-transform: uppercase
+					background: #475baf
+					padding: 17px 30px
+					margin-top: 30px
+					margin-left: 80px 
+					color: #fff
+					border-bottom: 4px solid #2c3c7f 
+				a:hover 
+					position: relative
+					top: 3px
+					left: 3px
+					border: none
+	.main
+		padding-top: 100px
+		.container
+			max-width: 970px
+			.main__collection__designer-watch:hover
+				opacity: 0.9
+				cursor: pointer
+			.main__collection__designer-watch
+				display: block
+				padding: 0
+				p 
+					text-align: right
+					margin: 0
+					color: #fff
+					font-size: 24px
+					font-family: 'Rockwell-Bold'
+					padding-top: 25px
+					padding-right: 86px
+					text-transform: uppercase
+					position: absolute
+					top: 0px 
+					right: 10px
+				h4
+					font-family: 'Rockwell-Bold'
+					color: #fff
+					font-size: 40px
+					text-transform: uppercase
+					margin: 0
+					text-align: right
+					line-height: 40px
+					position: absolute
+					top: 60px 
+					right: 10px
+				h4 span
+					color: #475baf
+					padding-right: 40px
+					position: absolute
+					top: 42px 
+					right: 10px
+			.main__collection__top:hover
+				opacity: 0.9
+				cursor: pointer
+			.main__collection__top-sales
+				padding: 0
+				.main__collection__top	
+					display: block
+					margin: 0
+					h4
+						font-family: 'Rockwell-Bold'
+						color: #fff
+						font-size: 42px
+						text-transform: uppercase
+						margin: 0
+						text-align: right
+						padding-top: 55px
+						padding-right: 112px
+						line-height: 40px
+						position: absolute
+						top: 0px 
+						right: 10px
+					p 
+						color: #fff
+						margin: 0
+						font-size: 14px
+						text-transform: uppercase
+						text-align: right
+						position: absolute
+						top: 95px 
+						right: 150px
+				.main__collection__new-collection:hover
+					opacity: 0.9
+					cursor: pointer	
+				.main__collection__new-collection
+					margin-top: 2px
+					display: block
+					padding: 0
+					padding-left: 15px
+					p 
+						color: #fff
+						margin: 0
+						font-family: 'OpenSans-Light'
+						font-size: 18px
+						text-transform: uppercase
+						text-align: center
+						position: absolute
+						bottom: 10px 
+						left: 47px
+				.main__collection__price:hover
+					opacity: 0.9
+					cursor: pointer		
+				.main__collection__price
+					margin-top: 2px
+					padding: 0
+					p 
+						color: #fff
+						margin: 0
+						font-size: 36px
+						font-family: 'OpenSans-Light'
+						text-transform: uppercase
+						line-height: 30px
+						text-align: left
+						position: absolute
+						top: 40px 
+						left: 5px
+					.btn 
+						display: inline-block
+						font-size: 12px
+						font-family: 'Rockwell-Bold'
+						text-transform: uppercase
+						background: #475baf
+						padding: 10px 12px
+						color: #fff
+						border-bottom: 2px solid #2c3c7f 
+						position: absolute
+						bottom: 9px
+						left: 11px
+					.btn:hover 
+						opacity: 0.9
+						cursor: pointer
+			.main__choice-watch 
+				padding-top: 65px
+				ul
+					list-style: none
+					padding: 0
+					margin: 0
+					text-transform: uppercase
+					font-size: 18px
+					li 
+						display: inline-block
+						padding-right: 35px
+						color: #555555
+						cursor: pointer
+					li:hover
+						color: #475baf
+						cursor: pointer
+					.active-list  
+						color: #475baf
+						cursor: pointer
+			.main__all-watch
+				padding-top: 35px
+				display: none
+				.main__all-watch__item:hover
+					border: 1px solid #d3d3d3
+				.main__all-watch__item
+					height: 386px
+					padding: 12px 0
+					margin: 0 auto
+					text-align: center
+					font-family: 'OpenSans-Light'
+					margin-bottom: 50px
+					border: 1px solid transparent
+					a.btn
+						display: inline-block
+						color: #fff
+						font-size: 12px
+						text-transform: uppercase
+						background: #47af78
+						padding: 3px 13px
+						font-family: 'RockwellMT'
+						position: absolute
+						top: 0px
+						left: 0px
+					p
+						margin: 0
+						color: #373737
+						font-size: 12px
+						padding-top: 10px
+					p span 
+						font-size: 24px
+						font-family: 'OpenSans-Bold'
+						position: absolute
+						bottom: 0px
+						left: 84px
+			.main__all-watch-active
+				display: block
+			.main__brands
+				padding-top: 20px
+				h3 
+					margin: 0 auto 
+					text-align: center 
+					text-transform: uppercase
+					color: #414141
+					font-size: 24px
+					font-family: 'Rockwell-Bold'
+				.middle 
+					display: flex
+					align-items: center
+					.main__brands__item 
+						padding-top: 15px
+						height: 100%
+						a
+							display: block
+							width: 100%
+							img 
+								display: block
+								height: auto
+			.main__about-watch
+				padding-top: 50px
+				h3
+					color: #414141
+					font-family: 'Rockwell-Bold'
+					font-size: 24px
+					text-align: center
+					margin: 0
+				p 
+					padding-top: 25px
+					padding-bottom: 40px
+					color: #414141
+					font-size: 14px
+					text-align: center
+					margin: 0
+				p span
+					padding-right: 10px
+					color: #6b6b6b
+					font-size: 12px
+			.main__information
+				overflow: hidden
+				padding-bottom: 30px
+				.main__information__customer
+					float: left
+					width: 150px
+					margin-right: 45px
+					p 
+						margin: 0
+						color: #544f4d
+						font-size: 16px
+						font-family: 'Arial'
+						font-weight: bold
+					ul 
+						list-style: none
+						margin: 0
+						padding: 0
+						padding-top: 10px
+						font-family: 'Arial'
+						font-size: 12px
+						li 
+							padding: 2px 0
+							a 
+								color: #544f4d
+								text-decoration: none
+							a:hover 
+								text-decoration: underline
+				.main__information__inf
+					float: left
+					width: 120px
+					p 
+						margin: 0
+						color: #544f4d
+						font-size: 16px
+						font-family: 'Arial'
+						font-weight: bold
+					ul 
+						list-style: none
+						margin: 0
+						padding: 0
+						padding-top: 10px
+						font-family: 'Arial'
+						font-size: 12px
+						li 
+							padding: 2px 0
+							a 
+								color: #544f4d
+								text-decoration: none
+							a:hover 
+								text-decoration: underline
+				.main__information__social
+					float: right
+					width: 300px 
+					text-align: left 
+					p 
+						margin: 0
+						color: #544f4d
+						font-size: 16px
+						font-family: 'Arial'
+						font-weight: bold
+					ul 
+						list-style: none
+						margin: 0
+						padding: 0
+						padding-top: 10px
+						display: block
+						width: 140px
+						li 
+							display: inline-block
+							width: 30%
+							padding: 5px
+							a 
+								display: block
+								width: 100%
+								img
+									display: block
+									height: 100%
+							a:hover
+								transform: rotate(360deg)
+								transition: all .6s
+	.footer
+		background: #000
+		padding: 20px 0
+		.container
+			max-width: 970px
+			p 
+				color: #8d8d8d
+				font-size: 11px
+				font-family: 'Arial'
+				margin: 0
+				line-height: 15px
+@import "media"
+
+
+
+
+						
+					
+
+
+
+							
+
+
+
+
+
+
+
+
+
+
