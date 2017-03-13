@@ -1,0 +1,594 @@
+@media only screen and (max-width : 480px)
+	body
+		margin: 0
+		font-family: 'RockwellMT'
+		.header, .main, .footer
+			display: block
+		.header__info
+			background: #000
+			.container
+				background: #000
+				max-width: 970px
+				.col-header
+					padding: 0
+				.header__info__phone
+					text-align: center
+					background: #fff 
+					color: #000
+					font-size: 12px
+					text-transform: uppercase
+					padding: 8px 0px
+					.header__info__phone-n
+						font-family: 'Rockwell-Bold'
+						font-size: 14px
+				.header__info__user
+					background: #000
+					list-style: none
+					margin: 0px
+					padding: 0px
+					text-align: right
+					li
+						display: inline-block
+						font-size: 11px
+						padding: 4px 12px
+						text-transform: uppercase
+						border-right: 1px solid #444444
+						vertical-align: middle
+						a 
+							color: #fff
+					li:last-child
+						border-right: none
+					li.currency
+						position: relative
+						padding-right: 25px
+					li.currency:after 
+						content: ""
+						position: absolute
+						background: url("../img/us-icon.png") no-repeat
+						width: 7px
+						height: 4px
+						top: 10px
+						right: 8px	
+					li.account
+						position: relative
+						padding-left: 25px 
+					li.account:after 
+						content: ""
+						position: absolute
+						background: url("../img/account-icon.png") no-repeat
+						width: 14px
+						height: 13px
+						top: 4px
+						left: 4px
+		.header__main
+			background: #fff
+			padding-top: 47px
+			.container
+				max-width: 970px 
+				.header__main__logo 
+					a
+						cursor: pointer
+						display: block
+						width: 100%
+				ul.header__main__nav 
+					list-style: none
+					padding: 0
+					margin: 0
+					font-size: 22px
+					text-transform: uppercase
+					position: fixed
+					top: 0px
+					left: 35%
+					display: none
+					z-index: 3
+					cursor: pointer
+					li 
+						display: inline-block
+						padding: 0 19px
+						position: relative
+						cursor: pointer
+					li :after 
+						content: ""
+						display: none
+						position: absolute
+						background: url("../img/nav-icon.png") no-repeat
+						width: 7px
+						height: 4px
+						top: 10px
+						right: 2px
+				.toggle-menu
+					position: absolute
+					top: 105px
+					right: 55px 
+					width: 40px
+					height: 40px
+					cursor: pointer
+					z-index: 1
+					span
+						display: block
+						background: #000
+						margin: 4px 0px
+						width: 40px
+						height: 7px
+						border-radius: 5px
+		.main
+			padding-top: 10px
+			.container
+				max-width: 970px
+				.main__about
+					padding-top: 50px
+					.main__slider
+						margin: 0 auto 
+						.main__about__slider
+							padding: 0px 10px
+							img
+								margin: 0 auto
+					.slider-nav
+						margin-top: 30px
+					.block-watch
+						padding: 0
+						.main__about-watch__comment
+							padding-top: 30px
+							padding-left: 10px
+							h2 
+								margin: 0
+								color: #414141
+								font-family: 'Rockwell-Bold'
+								font-size: 30px
+								text-transform: uppercase
+								line-height: 35px
+							p 
+								margin: 0
+								text-align: left
+								font-size: 18px
+								color: #414141
+								padding-top: 25px
+							ul
+								list-style: none
+								margin: 0
+								padding: 0
+								padding-top: 30px
+								color: #414141
+								font-size: 16px
+								li 
+									display: inline-block
+									padding-right: 15px
+									vertical-align: bottom
+								.new
+									display: inline-block
+									background: #47af78
+									color: #fff 
+									font-size: 12px
+									text-transform: uppercase
+									padding: 3px 12px
+									margin-left: 32px
+							.price	
+								color: #414141
+								font-family: 'Rockwell-Bold'
+								font-size: 30px
+								text-transform: uppercase
+								span
+									color: #74ad6f
+									text-transform: none
+									font-size: 18px
+									font-family: 'RockwellMT'
+									padding-left: 20px
+							a 
+								display: inline-block
+								font-size: 24px
+								font-family: 'Rockwell-Bold'
+								text-transform: uppercase
+								background: #475baf
+								padding: 13px 55px
+								margin-top: 35px 
+								color: #fff
+								border-bottom: 4px solid #2c3c7f
+							a:hover 
+								position: relative
+								top: 3px
+								left: 3px
+								border-bottom: none
+				.main__choice-watch 
+					padding-top: 65px
+					border-bottom: 1px solid #7f7f7f
+					ul
+						list-style: none
+						padding: 0
+						margin: 0
+						font-size: 18px
+						padding-bottom: 15px
+						li 
+							display: inline-block
+							padding-right: 65px
+							a 
+								color: #555555
+							a:hover
+								color: #475baf
+								font-family: 'Rockwell-Bold'
+						li.active a 
+							color: #475baf
+							font-family: 'Rockwell-Bold'
+				.main__details 
+					padding-top: 25px
+					p 
+						margin: 0
+						color: #414141
+						font-size: 16px 
+						line-height: 19px
+					.main__details__about
+						overflow: hidden
+						padding-top: 20px	
+						.name
+							list-style: none
+							margin: 0
+							padding: 0
+							font-size: 16px
+							color: #414141
+							font-family: 'Rockwell-Bold'
+							float: left
+							padding-right: 80px
+							li 
+								padding-bottom: 10px
+						.comments
+							list-style: none
+							margin: 0
+							padding: 0
+							font-size: 16px
+							color: #414141
+							float: left
+							li 
+								padding-bottom: 10px
+				.main__all-watch
+					padding-top: 65px
+					h3
+						margin: 0
+						color: #414141
+						padding-bottom: 15px
+						font-family: 'Rockwell-Bold'
+						font-size: 30px
+						text-transform: uppercase
+						border-bottom: 1px solid #7f7f7f
+						margin-bottom: 40px
+					.main__all-watch__item:hover
+						border: 1px solid #d3d3d3
+					.main__all-watch__item
+						height: 400px
+						padding: 25px 0
+						width: 100%
+						margin: 0 auto
+						text-align: center
+						font-family: 'OpenSans-Light'
+						margin-bottom: 50px
+						border: 1px solid transparent
+						a.btn
+							display: inline-block
+							color: #fff
+							font-size: 12px
+							text-transform: uppercase
+							background: #47af78
+							padding: 3px 13px
+							font-family: 'RockwellMT'
+							position: absolute
+							top: 0px
+							left: 16px
+						p
+							margin: 0
+							color: #373737
+							font-size: 12px
+							padding-top: 10px
+						p span 
+							font-size: 24px
+							font-family: 'OpenSans-Bold'
+							position: absolute
+							bottom: 55px
+							left: 84px
+		.footer
+			background: #000
+			padding: 20px 0
+			.container
+				max-width: 970px
+				p 
+					color: #8d8d8d
+					font-size: 11px
+					font-family: 'Arial'
+					margin: 0
+					line-height: 15px
+@media only screen and (max-width : 320px)
+	body
+		margin: 0
+		font-family: 'RockwellMT'
+		.header, .main, .footer
+			display: block
+		.header__info
+			background: #000
+			.container
+				background: #000
+				max-width: 970px
+				.col-header
+					padding: 0
+				.header__info__phone
+					text-align: center
+					background: #fff 
+					color: #000
+					font-size: 12px
+					text-transform: uppercase
+					padding: 8px 0px
+					.header__info__phone-n
+						font-family: 'Rockwell-Bold'
+						font-size: 14px
+				.header__info__user
+					background: #000
+					list-style: none
+					margin: 0px
+					padding: 0px
+					text-align: right
+					li
+						display: inline-block
+						font-size: 11px
+						padding: 4px 12px
+						text-transform: uppercase
+						border-right: 1px solid #444444
+						vertical-align: middle
+						a 
+							color: #fff
+					li:last-child
+						border-right: none
+					li.currency
+						position: relative
+						padding-right: 25px
+					li.currency:after 
+						content: ""
+						position: absolute
+						background: url("../img/us-icon.png") no-repeat
+						width: 7px
+						height: 4px
+						top: 10px
+						right: 8px	
+					li.account
+						position: relative
+						padding-left: 25px 
+					li.account:after 
+						content: ""
+						position: absolute
+						background: url("../img/account-icon.png") no-repeat
+						width: 14px
+						height: 13px
+						top: 4px
+						left: 4px
+		.header__main
+			background: #fff
+			padding-top: 47px
+			.container
+				max-width: 970px 
+				.header__main__logo 
+					a
+						cursor: pointer
+						display: block
+						width: 100%
+				.header__main__nav 
+					list-style: none
+					padding: 0
+					margin: 0
+					color: #fff
+					font-size: 22px
+					text-transform: uppercase
+					position: fixed
+					top: 0px
+					left: 35%
+					display: none
+					z-index: 3
+					cursor: pointer
+					li 
+						display: inline-block
+						padding: 0 19px
+						position: relative
+						cursor: pointer
+					li :after 
+						content: ""
+						display: none
+						position: absolute
+						background: url("../img/nav-icon.png") no-repeat
+						width: 7px
+						height: 4px
+						top: 10px
+						right: 2px
+				.toggle-menu
+					position: absolute
+					top: 105px
+					right: 55px 
+					width: 40px
+					height: 40px
+					cursor: pointer
+					z-index: 1
+					span
+						display: block
+						background: #000
+						margin: 4px 0px
+						width: 40px
+						height: 7px
+						border-radius: 5px
+		.main
+			padding-top: 10px
+			.container
+				max-width: 970px
+				.main__about
+					padding-top: 50px
+					.main__slider
+						margin: 0 auto 
+						.main__about__slider
+							padding: 0px 10px
+							img
+								margin: 0 auto
+					.slider-nav
+						margin-top: 30px
+					.block-watch
+						padding: 0
+						.main__about-watch__comment
+							padding-top: 30px
+							padding-left: 10px
+							h2 
+								margin: 0
+								color: #414141
+								font-family: 'Rockwell-Bold'
+								font-size: 25px
+								text-transform: uppercase
+								line-height: 30px
+							p 
+								margin: 0
+								text-align: left
+								font-size: 18px
+								color: #414141
+								padding-top: 25px
+							ul
+								list-style: none
+								margin: 0
+								padding: 0
+								padding-top: 30px
+								color: #414141
+								font-size: 16px
+								li 
+									display: inline-block
+									padding-right: 15px
+									vertical-align: bottom
+								.new
+									display: inline-block
+									background: #47af78
+									color: #fff 
+									font-size: 12px
+									text-transform: uppercase
+									padding: 3px 12px
+									margin-left: 32px
+							.price	
+								color: #414141
+								font-family: 'Rockwell-Bold'
+								font-size: 30px
+								text-transform: uppercase
+								span
+									color: #74ad6f
+									text-transform: none
+									font-size: 18px
+									font-family: 'RockwellMT'
+									padding-left: 20px
+							a 
+								display: inline-block
+								font-size: 24px
+								font-family: 'Rockwell-Bold'
+								text-transform: uppercase
+								background: #475baf
+								padding: 13px 55px
+								margin-top: 35px 
+								color: #fff
+								border-bottom: 4px solid #2c3c7f
+							a:hover 
+								position: relative
+								top: 3px
+								left: 3px
+								border-bottom: none
+				.main__choice-watch 
+					padding-top: 65px
+					border-bottom: 1px solid #7f7f7f
+					ul
+						list-style: none
+						padding: 0
+						margin: 0
+						font-size: 22px
+						padding-bottom: 15px
+						li 
+							display: inline-block
+							text-align: center
+							a 
+								color: #555555
+							a:hover
+								color: #475baf
+								font-family: 'Rockwell-Bold'
+						li.active a 
+							color: #475baf
+							font-family: 'Rockwell-Bold'
+				.main__details 
+					padding-top: 25px
+					p 
+						margin: 0
+						color: #414141
+						font-size: 16px 
+						line-height: 19px
+					.main__details__about
+						overflow: hidden
+						padding-top: 20px	
+						.name
+							list-style: none
+							margin: 0
+							padding: 0
+							font-size: 16px
+							color: #414141
+							font-family: 'Rockwell-Bold'
+							float: left
+							padding-right: 80px
+							li 
+								padding-bottom: 10px
+						.comments
+							list-style: none
+							margin: 0
+							padding: 0
+							font-size: 16px
+							color: #414141
+							float: left
+							li 
+								padding-bottom: 10px
+				.main__all-watch
+					padding-top: 65px
+					h3
+						margin: 0
+						color: #414141
+						padding-bottom: 15px
+						font-family: 'Rockwell-Bold'
+						font-size: 30px
+						text-transform: uppercase
+						border-bottom: 1px solid #7f7f7f
+						margin-bottom: 40px
+					.main__all-watch__item:hover
+						border: 1px solid #d3d3d3
+					.main__all-watch__item
+						height: 330px
+						padding: 25px 0
+						width: 100%
+						margin: 0 auto
+						text-align: center
+						font-family: 'OpenSans-Light'
+						margin-bottom: 50px
+						border: 1px solid transparent
+						a.btn
+							display: inline-block
+							color: #fff
+							font-size: 12px
+							text-transform: uppercase
+							background: #47af78
+							padding: 3px 13px
+							font-family: 'RockwellMT'
+							position: absolute
+							top: 0px
+							left: 16px
+						img
+							margin: 0 auto
+						p
+							margin: 0
+							color: #373737
+							font-size: 12px
+							padding-top: 10px
+						p span 
+							font-size: 24px
+							font-family: 'OpenSans-Bold'
+							position: absolute
+							bottom: 55px
+							left: 52px
+		.footer
+			background: #000
+			padding: 20px 0
+			.container
+				max-width: 970px
+				p 
+					color: #8d8d8d
+					text-align: center
+					font-size: 11px
+					font-family: 'Arial'
+					margin: 0
+					line-height: 15px

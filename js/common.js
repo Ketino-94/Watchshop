@@ -15,12 +15,50 @@ $(function() {
 		infinite: true
 	});
 
-	$('.main__slider').slick({
+	$('.responsive').slick({
 		dots: true,
-		prevArrow: '<button type="button" class="slick-prev"></button>',
-		nextArrow: '<button type="button" class="slick-next"></button>',
-		infinite: true
+		infinite: false,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 600,	
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				infinite: false,
+				dots: false,
+				prevArrow: false,
+	  			nextArrow: false
+			}
+		},
+		{
+			breakpoint: 480,	
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: false,
+				dots: false,
+				prevArrow: false,
+	  			nextArrow: false
+			}
+		}
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+		]
 	});
+
 
 
 	$(".main__all-watch").first().addClass("main__all-watch-active");
@@ -55,12 +93,13 @@ $(function() {
 	  	asNavFor: '.slider-nav'
 	});
 	$('.slider-nav').slick({
-	  	slidesToShow: 3,
+	  	slidesToShow: 4,
 	  	slidesToScroll: 1,
 	  	asNavFor: '.slider-for',
-	  	dots: true,
-	  	centerMode: true,
-	  	focusOnSelect: true
+	  	dots: false,
+	  	focusOnSelect: true,
+	  	prevArrow: false,
+	  	nextArrow: false
 	});
 
 });

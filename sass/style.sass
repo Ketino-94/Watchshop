@@ -98,12 +98,29 @@ body
 					height: 4px
 					top: 10px
 					right: 2px
+			.overlay
+				position: fixed
+				background: rgba(0,0,0,0.9)
+				height: 100%
+				left: 0px
+				top: 0
+				width: 100%
+				z-index: 2
+				display: none
 	.main
 		padding-top: 10px
 		.container
 			max-width: 970px
 			.main__about
 				padding-top: 50px
+				.main__slider
+					margin: 0 auto 
+					.main__about__slider
+						padding: 0px 10px
+						img
+							margin: 0 auto
+				.slider-nav
+					margin-top: 30px
 				.block-watch
 					padding: 0
 				h2 
@@ -247,6 +264,8 @@ body
 						position: absolute
 						top: 0px
 						left: 16px
+					img
+						margin: 0 auto
 					p
 						margin: 0
 						color: #373737
@@ -389,3 +408,4 @@ body
 				font-family: 'Arial'
 				margin: 0
 				line-height: 15px
+@import "media-style"

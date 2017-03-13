@@ -97,12 +97,29 @@ body {
           height: 4px;
           top: 10px;
           right: 2px; }
+      body .header__main .container .overlay {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100%;
+        left: 0px;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        display: none; }
   body .main {
     padding-top: 10px; }
     body .main .container {
       max-width: 970px; }
       body .main .container .main__about {
         padding-top: 50px; }
+        body .main .container .main__about .main__slider {
+          margin: 0 auto; }
+          body .main .container .main__about .main__slider .main__about__slider {
+            padding: 0px 10px; }
+            body .main .container .main__about .main__slider .main__about__slider img {
+              margin: 0 auto; }
+        body .main .container .main__about .slider-nav {
+          margin-top: 30px; }
         body .main .container .main__about .block-watch {
           padding: 0; }
         body .main .container .main__about h2 {
@@ -246,6 +263,8 @@ body {
             position: absolute;
             top: 0px;
             left: 16px; }
+          body .main .container .main__all-watch .main__all-watch__item img {
+            margin: 0 auto; }
           body .main .container .main__all-watch .main__all-watch__item p {
             margin: 0;
             color: #373737;
@@ -267,8 +286,14 @@ body {
           font-size: 24px;
           font-family: "Rockwell-Bold"; }
         body .main .container .main__brands .middle {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center; }
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
           body .main .container .main__brands .middle .main__brands__item {
             padding-top: 15px;
             height: 100%; }
@@ -375,8 +400,11 @@ body {
                   display: block;
                   height: 100%; }
               body .main .container .main__information .main__information__social ul li a:hover {
-                transform: rotate(360deg);
-                transition: all 0.6s; }
+                -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                -webkit-transition: all 0.6s;
+                        transition: all 0.6s; }
   body .footer {
     background: #000;
     padding: 20px 0; }
@@ -389,4 +417,595 @@ body {
         margin: 0;
         line-height: 15px; }
 
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    font-family: "RockwellMT"; }
+    body .header, body .main, body .footer {
+      display: block; }
+    body .header__info {
+      background: #000; }
+      body .header__info .container {
+        background: #000;
+        max-width: 970px; }
+        body .header__info .container .col-header {
+          padding: 0; }
+        body .header__info .container .header__info__phone {
+          text-align: center;
+          background: #fff;
+          color: #000;
+          font-size: 12px;
+          text-transform: uppercase;
+          padding: 8px 0px; }
+          body .header__info .container .header__info__phone .header__info__phone-n {
+            font-family: "Rockwell-Bold";
+            font-size: 14px; }
+        body .header__info .container .header__info__user {
+          background: #000;
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+          text-align: right; }
+          body .header__info .container .header__info__user li {
+            display: inline-block;
+            font-size: 11px;
+            padding: 4px 12px;
+            text-transform: uppercase;
+            border-right: 1px solid #444444;
+            vertical-align: middle; }
+            body .header__info .container .header__info__user li a {
+              color: #fff; }
+          body .header__info .container .header__info__user li:last-child {
+            border-right: none; }
+          body .header__info .container .header__info__user li.currency {
+            position: relative;
+            padding-right: 25px; }
+          body .header__info .container .header__info__user li.currency:after {
+            content: "";
+            position: absolute;
+            background: url("../img/us-icon.png") no-repeat;
+            width: 7px;
+            height: 4px;
+            top: 10px;
+            right: 8px; }
+          body .header__info .container .header__info__user li.account {
+            position: relative;
+            padding-left: 25px; }
+          body .header__info .container .header__info__user li.account:after {
+            content: "";
+            position: absolute;
+            background: url("../img/account-icon.png") no-repeat;
+            width: 14px;
+            height: 13px;
+            top: 4px;
+            left: 4px; }
+    body .header__main {
+      background: #fff;
+      padding-top: 47px; }
+      body .header__main .container {
+        max-width: 970px; }
+        body .header__main .container .header__main__logo a {
+          cursor: pointer;
+          display: block;
+          width: 100%; }
+        body .header__main .container ul.header__main__nav {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          font-size: 22px;
+          text-transform: uppercase;
+          position: fixed;
+          top: 0px;
+          left: 35%;
+          display: none;
+          z-index: 3;
+          cursor: pointer; }
+          body .header__main .container ul.header__main__nav li {
+            display: inline-block;
+            padding: 0 19px;
+            position: relative;
+            cursor: pointer; }
+          body .header__main .container ul.header__main__nav li :after {
+            content: "";
+            display: none;
+            position: absolute;
+            background: url("../img/nav-icon.png") no-repeat;
+            width: 7px;
+            height: 4px;
+            top: 10px;
+            right: 2px; }
+        body .header__main .container .toggle-menu {
+          position: absolute;
+          top: 105px;
+          right: 55px;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          z-index: 1; }
+          body .header__main .container .toggle-menu span {
+            display: block;
+            background: #000;
+            margin: 4px 0px;
+            width: 40px;
+            height: 7px;
+            border-radius: 5px; }
+    body .main {
+      padding-top: 10px; }
+      body .main .container {
+        max-width: 970px; }
+        body .main .container .main__about {
+          padding-top: 50px; }
+          body .main .container .main__about .main__slider {
+            margin: 0 auto; }
+            body .main .container .main__about .main__slider .main__about__slider {
+              padding: 0px 10px; }
+              body .main .container .main__about .main__slider .main__about__slider img {
+                margin: 0 auto; }
+          body .main .container .main__about .slider-nav {
+            margin-top: 30px; }
+          body .main .container .main__about .block-watch {
+            padding: 0; }
+            body .main .container .main__about .block-watch .main__about-watch__comment {
+              padding-top: 30px;
+              padding-left: 10px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment h2 {
+                margin: 0;
+                color: #414141;
+                font-family: "Rockwell-Bold";
+                font-size: 30px;
+                text-transform: uppercase;
+                line-height: 35px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment p {
+                margin: 0;
+                text-align: left;
+                font-size: 18px;
+                color: #414141;
+                padding-top: 25px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                padding-top: 30px;
+                color: #414141;
+                font-size: 16px; }
+                body .main .container .main__about .block-watch .main__about-watch__comment ul li {
+                  display: inline-block;
+                  padding-right: 15px;
+                  vertical-align: bottom; }
+                body .main .container .main__about .block-watch .main__about-watch__comment ul .new {
+                  display: inline-block;
+                  background: #47af78;
+                  color: #fff;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  padding: 3px 12px;
+                  margin-left: 32px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment .price {
+                color: #414141;
+                font-family: "Rockwell-Bold";
+                font-size: 30px;
+                text-transform: uppercase; }
+                body .main .container .main__about .block-watch .main__about-watch__comment .price span {
+                  color: #74ad6f;
+                  text-transform: none;
+                  font-size: 18px;
+                  font-family: "RockwellMT";
+                  padding-left: 20px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment a {
+                display: inline-block;
+                font-size: 24px;
+                font-family: "Rockwell-Bold";
+                text-transform: uppercase;
+                background: #475baf;
+                padding: 13px 55px;
+                margin-top: 35px;
+                color: #fff;
+                border-bottom: 4px solid #2c3c7f; }
+              body .main .container .main__about .block-watch .main__about-watch__comment a:hover {
+                position: relative;
+                top: 3px;
+                left: 3px;
+                border-bottom: none; }
+        body .main .container .main__choice-watch {
+          padding-top: 65px;
+          border-bottom: 1px solid #7f7f7f; }
+          body .main .container .main__choice-watch ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+            padding-bottom: 15px; }
+            body .main .container .main__choice-watch ul li {
+              display: inline-block;
+              padding-right: 65px; }
+              body .main .container .main__choice-watch ul li a {
+                color: #555555; }
+              body .main .container .main__choice-watch ul li a:hover {
+                color: #475baf;
+                font-family: "Rockwell-Bold"; }
+            body .main .container .main__choice-watch ul li.active a {
+              color: #475baf;
+              font-family: "Rockwell-Bold"; }
+        body .main .container .main__details {
+          padding-top: 25px; }
+          body .main .container .main__details p {
+            margin: 0;
+            color: #414141;
+            font-size: 16px;
+            line-height: 19px; }
+          body .main .container .main__details .main__details__about {
+            overflow: hidden;
+            padding-top: 20px; }
+            body .main .container .main__details .main__details__about .name {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: #414141;
+              font-family: "Rockwell-Bold";
+              float: left;
+              padding-right: 80px; }
+              body .main .container .main__details .main__details__about .name li {
+                padding-bottom: 10px; }
+            body .main .container .main__details .main__details__about .comments {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: #414141;
+              float: left; }
+              body .main .container .main__details .main__details__about .comments li {
+                padding-bottom: 10px; }
+        body .main .container .main__all-watch {
+          padding-top: 65px; }
+          body .main .container .main__all-watch h3 {
+            margin: 0;
+            color: #414141;
+            padding-bottom: 15px;
+            font-family: "Rockwell-Bold";
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #7f7f7f;
+            margin-bottom: 40px; }
+          body .main .container .main__all-watch .main__all-watch__item:hover {
+            border: 1px solid #d3d3d3; }
+          body .main .container .main__all-watch .main__all-watch__item {
+            height: 400px;
+            padding: 25px 0;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: "OpenSans-Light";
+            margin-bottom: 50px;
+            border: 1px solid transparent; }
+            body .main .container .main__all-watch .main__all-watch__item a.btn {
+              display: inline-block;
+              color: #fff;
+              font-size: 12px;
+              text-transform: uppercase;
+              background: #47af78;
+              padding: 3px 13px;
+              font-family: "RockwellMT";
+              position: absolute;
+              top: 0px;
+              left: 16px; }
+            body .main .container .main__all-watch .main__all-watch__item p {
+              margin: 0;
+              color: #373737;
+              font-size: 12px;
+              padding-top: 10px; }
+            body .main .container .main__all-watch .main__all-watch__item p span {
+              font-size: 24px;
+              font-family: "OpenSans-Bold";
+              position: absolute;
+              bottom: 55px;
+              left: 84px; }
+    body .footer {
+      background: #000;
+      padding: 20px 0; }
+      body .footer .container {
+        max-width: 970px; }
+        body .footer .container p {
+          color: #8d8d8d;
+          font-size: 11px;
+          font-family: "Arial";
+          margin: 0;
+          line-height: 15px; } }
+@media only screen and (max-width: 320px) {
+  body {
+    margin: 0;
+    font-family: "RockwellMT"; }
+    body .header, body .main, body .footer {
+      display: block; }
+    body .header__info {
+      background: #000; }
+      body .header__info .container {
+        background: #000;
+        max-width: 970px; }
+        body .header__info .container .col-header {
+          padding: 0; }
+        body .header__info .container .header__info__phone {
+          text-align: center;
+          background: #fff;
+          color: #000;
+          font-size: 12px;
+          text-transform: uppercase;
+          padding: 8px 0px; }
+          body .header__info .container .header__info__phone .header__info__phone-n {
+            font-family: "Rockwell-Bold";
+            font-size: 14px; }
+        body .header__info .container .header__info__user {
+          background: #000;
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+          text-align: right; }
+          body .header__info .container .header__info__user li {
+            display: inline-block;
+            font-size: 11px;
+            padding: 4px 12px;
+            text-transform: uppercase;
+            border-right: 1px solid #444444;
+            vertical-align: middle; }
+            body .header__info .container .header__info__user li a {
+              color: #fff; }
+          body .header__info .container .header__info__user li:last-child {
+            border-right: none; }
+          body .header__info .container .header__info__user li.currency {
+            position: relative;
+            padding-right: 25px; }
+          body .header__info .container .header__info__user li.currency:after {
+            content: "";
+            position: absolute;
+            background: url("../img/us-icon.png") no-repeat;
+            width: 7px;
+            height: 4px;
+            top: 10px;
+            right: 8px; }
+          body .header__info .container .header__info__user li.account {
+            position: relative;
+            padding-left: 25px; }
+          body .header__info .container .header__info__user li.account:after {
+            content: "";
+            position: absolute;
+            background: url("../img/account-icon.png") no-repeat;
+            width: 14px;
+            height: 13px;
+            top: 4px;
+            left: 4px; }
+    body .header__main {
+      background: #fff;
+      padding-top: 47px; }
+      body .header__main .container {
+        max-width: 970px; }
+        body .header__main .container .header__main__logo a {
+          cursor: pointer;
+          display: block;
+          width: 100%; }
+        body .header__main .container .header__main__nav {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          color: #fff;
+          font-size: 22px;
+          text-transform: uppercase;
+          position: fixed;
+          top: 0px;
+          left: 35%;
+          display: none;
+          z-index: 3;
+          cursor: pointer; }
+          body .header__main .container .header__main__nav li {
+            display: inline-block;
+            padding: 0 19px;
+            position: relative;
+            cursor: pointer; }
+          body .header__main .container .header__main__nav li :after {
+            content: "";
+            display: none;
+            position: absolute;
+            background: url("../img/nav-icon.png") no-repeat;
+            width: 7px;
+            height: 4px;
+            top: 10px;
+            right: 2px; }
+        body .header__main .container .toggle-menu {
+          position: absolute;
+          top: 105px;
+          right: 55px;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          z-index: 1; }
+          body .header__main .container .toggle-menu span {
+            display: block;
+            background: #000;
+            margin: 4px 0px;
+            width: 40px;
+            height: 7px;
+            border-radius: 5px; }
+    body .main {
+      padding-top: 10px; }
+      body .main .container {
+        max-width: 970px; }
+        body .main .container .main__about {
+          padding-top: 50px; }
+          body .main .container .main__about .main__slider {
+            margin: 0 auto; }
+            body .main .container .main__about .main__slider .main__about__slider {
+              padding: 0px 10px; }
+              body .main .container .main__about .main__slider .main__about__slider img {
+                margin: 0 auto; }
+          body .main .container .main__about .slider-nav {
+            margin-top: 30px; }
+          body .main .container .main__about .block-watch {
+            padding: 0; }
+            body .main .container .main__about .block-watch .main__about-watch__comment {
+              padding-top: 30px;
+              padding-left: 10px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment h2 {
+                margin: 0;
+                color: #414141;
+                font-family: "Rockwell-Bold";
+                font-size: 25px;
+                text-transform: uppercase;
+                line-height: 30px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment p {
+                margin: 0;
+                text-align: left;
+                font-size: 18px;
+                color: #414141;
+                padding-top: 25px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                padding-top: 30px;
+                color: #414141;
+                font-size: 16px; }
+                body .main .container .main__about .block-watch .main__about-watch__comment ul li {
+                  display: inline-block;
+                  padding-right: 15px;
+                  vertical-align: bottom; }
+                body .main .container .main__about .block-watch .main__about-watch__comment ul .new {
+                  display: inline-block;
+                  background: #47af78;
+                  color: #fff;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  padding: 3px 12px;
+                  margin-left: 32px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment .price {
+                color: #414141;
+                font-family: "Rockwell-Bold";
+                font-size: 30px;
+                text-transform: uppercase; }
+                body .main .container .main__about .block-watch .main__about-watch__comment .price span {
+                  color: #74ad6f;
+                  text-transform: none;
+                  font-size: 18px;
+                  font-family: "RockwellMT";
+                  padding-left: 20px; }
+              body .main .container .main__about .block-watch .main__about-watch__comment a {
+                display: inline-block;
+                font-size: 24px;
+                font-family: "Rockwell-Bold";
+                text-transform: uppercase;
+                background: #475baf;
+                padding: 13px 55px;
+                margin-top: 35px;
+                color: #fff;
+                border-bottom: 4px solid #2c3c7f; }
+              body .main .container .main__about .block-watch .main__about-watch__comment a:hover {
+                position: relative;
+                top: 3px;
+                left: 3px;
+                border-bottom: none; }
+        body .main .container .main__choice-watch {
+          padding-top: 65px;
+          border-bottom: 1px solid #7f7f7f; }
+          body .main .container .main__choice-watch ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 22px;
+            padding-bottom: 15px; }
+            body .main .container .main__choice-watch ul li {
+              display: inline-block;
+              text-align: center; }
+              body .main .container .main__choice-watch ul li a {
+                color: #555555; }
+              body .main .container .main__choice-watch ul li a:hover {
+                color: #475baf;
+                font-family: "Rockwell-Bold"; }
+            body .main .container .main__choice-watch ul li.active a {
+              color: #475baf;
+              font-family: "Rockwell-Bold"; }
+        body .main .container .main__details {
+          padding-top: 25px; }
+          body .main .container .main__details p {
+            margin: 0;
+            color: #414141;
+            font-size: 16px;
+            line-height: 19px; }
+          body .main .container .main__details .main__details__about {
+            overflow: hidden;
+            padding-top: 20px; }
+            body .main .container .main__details .main__details__about .name {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: #414141;
+              font-family: "Rockwell-Bold";
+              float: left;
+              padding-right: 80px; }
+              body .main .container .main__details .main__details__about .name li {
+                padding-bottom: 10px; }
+            body .main .container .main__details .main__details__about .comments {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: #414141;
+              float: left; }
+              body .main .container .main__details .main__details__about .comments li {
+                padding-bottom: 10px; }
+        body .main .container .main__all-watch {
+          padding-top: 65px; }
+          body .main .container .main__all-watch h3 {
+            margin: 0;
+            color: #414141;
+            padding-bottom: 15px;
+            font-family: "Rockwell-Bold";
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #7f7f7f;
+            margin-bottom: 40px; }
+          body .main .container .main__all-watch .main__all-watch__item:hover {
+            border: 1px solid #d3d3d3; }
+          body .main .container .main__all-watch .main__all-watch__item {
+            height: 330px;
+            padding: 25px 0;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: "OpenSans-Light";
+            margin-bottom: 50px;
+            border: 1px solid transparent; }
+            body .main .container .main__all-watch .main__all-watch__item a.btn {
+              display: inline-block;
+              color: #fff;
+              font-size: 12px;
+              text-transform: uppercase;
+              background: #47af78;
+              padding: 3px 13px;
+              font-family: "RockwellMT";
+              position: absolute;
+              top: 0px;
+              left: 16px; }
+            body .main .container .main__all-watch .main__all-watch__item img {
+              margin: 0 auto; }
+            body .main .container .main__all-watch .main__all-watch__item p {
+              margin: 0;
+              color: #373737;
+              font-size: 12px;
+              padding-top: 10px; }
+            body .main .container .main__all-watch .main__all-watch__item p span {
+              font-size: 24px;
+              font-family: "OpenSans-Bold";
+              position: absolute;
+              bottom: 55px;
+              left: 52px; }
+    body .footer {
+      background: #000;
+      padding: 20px 0; }
+      body .footer .container {
+        max-width: 970px; }
+        body .footer .container p {
+          color: #8d8d8d;
+          text-align: center;
+          font-size: 11px;
+          font-family: "Arial";
+          margin: 0;
+          line-height: 15px; } }
